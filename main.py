@@ -11,7 +11,7 @@ if __name__ == "__main__":
     code_dim = 256
     num_layers = 6
     num_heads = 8
-    num_epochs = 3
+    num_epochs = 3 #should be at least 10?
 
     vae = RQVAE(codebook_size, code_dim)
     model = ContextualRQTransformer(codebook_size, code_dim, num_layers, num_heads)
